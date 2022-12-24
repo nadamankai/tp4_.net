@@ -1,0 +1,19 @@
+﻿@model List<String>
+@{
+    ViewBag.Title = "Courses";
+}
+<h1 style="color: blueviolet">Liste des courses</h1>
+
+    @foreach (String s in Model)
+    {
+
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+
+        
+                <a href="Course/@s">@s</a>
+            </div>
+        </div>
+
+    }
+  
